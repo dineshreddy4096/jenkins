@@ -1,0 +1,35 @@
+Started by timer
+Running as SYSTEM
+Building in workspace /home/coder/project/workspace/jenkins/workspace/firstPro
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /home/coder/project/workspace/jenkins/workspace/firstPro/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/dineshreddy4096/jenkins # timeout=10
+Fetching upstream changes from https://github.com/dineshreddy4096/jenkins
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+ > git fetch --tags --force --progress -- https://github.com/dineshreddy4096/jenkins +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 27c0937a9ed889d71b5123acab27bca930c112f7 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 27c0937a9ed889d71b5123acab27bca930c112f7 # timeout=10
+Commit message: "second commit"
+ > git rev-list --no-walk 559df89cbc3a8a6ce4784a8e19c0562d85f3d445 # timeout=10
+[firstPro] $ mvn clean test
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  0.053 s
+[[1;34mINFO[m] Finished at: 2025-07-11T05:16:05Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] The goal you specified requires a project to execute but there is no POM in this directory (/home/coder/project/workspace/jenkins/workspace/firstPro). Please verify you invoked Maven from the correct directory. -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+Build step 'Invoke top-level Maven targets' marked build as failure
+Finished: FAILURE

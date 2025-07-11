@@ -18,5 +18,6 @@ public class AppTest
         assertTrue( true );
         System.out.println("true");
         System.out.println("false");
+        System.out.println("final");
     }
 }
